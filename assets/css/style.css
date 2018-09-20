@@ -1,0 +1,189 @@
+/* Table of Contents
+1. Tags 
+2. 
+3.
+
+
+
+
+
+*/
+/*------
+Tags
+------*/
+body {
+  background: url("../images/bg.jpg");
+}
+/*  */
+.images {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 3px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.5s ease;
+}
+
+.images:hover {
+  transform: scale(1.1);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border: 3px solid blue;
+}
+
+.attacker {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 3px solid blue;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.5s ease;
+}
+
+#attacker {
+  background-color: #8ac1da;
+  border: 3px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+#defender {
+  background-color: #da8a8a;
+  border: 3px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.defender {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 3px solid red;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.5s ease;
+}
+
+#select-attacker {
+  margin: 0 auto;
+  background-color: white;
+  width: min-content;
+  padding: 30px;
+  position: absolute;
+  right: 0;
+}
+
+/* selected */
+#selected {
+  background-color: #c1c1c1;
+  margin-bottom: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin-top: 10px;
+  padding: 10px;
+  color: white;
+  border: 3px solid white;
+}
+
+/* moves row */
+#movesRow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: #8ac1da;
+  border: 3px solid white;
+}
+/* buttons */
+.skillsBtn {
+  background-color: blue;
+  border: none;
+  margin: 10px;
+  color: white;
+  transition: all 0.5s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.skillsBtn:hover {
+  background-color: green;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+#statusMessages {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.loadBar {
+  opacity: 0;
+  height: 64%;
+  width: 40%;
+  margin-left: 99px;
+  background-color: black;
+  transition: width 3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  position: absolute;
+  top: 62px;
+}
+
+.loadBarCollapse {
+  opacity: 0.5;
+  width: 0%;
+}
+
+/* attacked */
+.attacked {
+  animation: shake 0.5s;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.damageNumber {
+  opacity: 0;
+  font-size: 65px;
+  height: 45%;
+  width: 20%;
+  position: absolute;
+  font-weight: 700;
+  top: 80px;
+  left: 149px;
+  transition: all 0.5s ease;
+}
+
+.showNumber {
+  opacity: 1;
+}
+#howTo {
+  background-color: #c1c1c1;
+  border: 3px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
